@@ -17,7 +17,7 @@ function greetingFunction(saySomethingElse) {
 
   if (saySomethingElse) {
     // Block scope
-    let message = "hi!\nhello!"; //set to a string
+    let message = "hello!"; //set to a string
     console.log(message); 
   }
 }
@@ -32,4 +32,5 @@ if (true) {
 }
 
 //DO NOT change this line
+
 console.log(message);  //should return "goodbye!"
