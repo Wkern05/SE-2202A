@@ -6,7 +6,7 @@ function Point(x, y) {
 
     this.print = function() {
         // Keep same format as above
-        console.log("(" + this.x + "," + this.y + ")")
+        console.log("(" + this.x + ", " + this.y + ")")
     };
 
     this.midpoint = function(p2){
@@ -54,3 +54,4 @@ let p3 = new Point(0,0)
 let p4 = new Point(4,8)
 p3.scaleTo(p4,0.25).print(1,2)// expect (1, 2)
 p4.scaleTo(p3, 0.75).print() // expect (1, 2)
+
