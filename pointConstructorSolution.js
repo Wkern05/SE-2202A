@@ -16,7 +16,7 @@ let PointPrototype = {
     */
     print: function() {
         // Use the format specified above
-        console.log("(" + this.x + "," + this.y + ")")
+        console.log("(" + this.x + ", " + this.y + ")")
     }
 };
 
@@ -59,7 +59,7 @@ function Point(x, y) {
 
     this.print = function() {
         // Keep same format as above
-        console.log("(" + this.x + "," + this.y + ")")
+        console.log("(" + this.x + ", " + this.y + ")")
     };
 }
 
@@ -73,3 +73,4 @@ p2 = new Point(10, 15)//make with constructor function
 p2.print();
 p2 = new Point(-2, 8)//make with constructor function
 p2.print();
+
