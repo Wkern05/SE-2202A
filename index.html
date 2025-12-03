@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Course Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Course Explorer</h1>
+  </header>
+
+  <main>
+    <!-- LOAD COURSES SECTION -->
+    <section id="load-section">
+      <h2>Load Courses (JSON)</h2>
+      <input type="file" id="fileInput" accept=".json" />
+      <div id="fileError" class="error-message"></div>
+    </section>
+
+    <!-- FILTER / SORT SECTION -->
+    <section id="filter-section">
+      <h2>Sort and Filter</h2>
+
+      <div class="filter-row">
+        <label for="departmentFilter">Department:</label>
+        <select id="departmentFilter">
+          <option value="All">All</option>
+        </select>
+
+        <label for="levelFilter">Level:</label>
+        <select id="levelFilter">
+          <option value="All">All</option>
+        </select>
+
+        <label for="creditsFilter">Credits:</label>
+        <select id="creditsFilter">
+          <option value="All">All</option>
+        </select>
+
+        <label for="instructorFilter">Instructor:</label>
+        <select id="instructorFilter">
+          <option value="All">All</option>
+        </select>
+
+        <label for="sortSelect">Sort By:</label>
+        <select id="sortSelect">
+          <option value="none">None</option>
+          <option value="id-asc">ID (A–Z)</option>
+          <option value="id-desc">ID (Z–A)</option>
+          <option value="title-asc">Title (A–Z)</option>
+          <option value="title-desc">Title (Z–A)</option>
+          <option value="semester-asc">Semester (Earliest first)</option>
+          <option value="semester-desc">Semester (Latest first)</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT: LIST + DETAILS -->
+    <section id="content-section">
+      <div id="course-list-container">
+        <ul id="courseList"></ul>
+      </div>
+
+      <div id="course-detail-container">
+        <div id="courseDetail">
+          <p>Load a JSON file and select a course to see details.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
